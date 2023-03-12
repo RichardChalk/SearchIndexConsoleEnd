@@ -25,6 +25,9 @@ namespace SearchIndexConsoleEnd.Data
         [SearchableField(IsFilterable = true, IsSortable = true, IsFacetable = true)]
         public string Country { get; set; }
 
+        [SearchableField(IsFilterable = true, IsSortable = true, IsFacetable = true)]
+        public string TelNum { get; set; }
+
         // ///////////////////////////////////////////////////////////////////////////////////////////////
         // This implementation of ToString() is only for the purposes of the sample console application.
         // You can override ToString() in your own model class if you want, but you don't need to in order
@@ -35,7 +38,7 @@ namespace SearchIndexConsoleEnd.Data
 
             if (!IsEmpty)
             {
-                builder.AppendFormat("{0}\n{1}, {2} {3}\n{4}", StreetAddress, City, StateProvince, PostalCode, Country);
+                builder.AppendFormat("{0}\n{1}, {2} {3}\n{4} \nTel: {5}", StreetAddress, City, StateProvince, PostalCode, Country, TelNum);
             }
 
             return builder.ToString();
@@ -46,6 +49,7 @@ namespace SearchIndexConsoleEnd.Data
                                String.IsNullOrEmpty(City) &&
                                String.IsNullOrEmpty(StateProvince) &&
                                String.IsNullOrEmpty(PostalCode) &&
-                               String.IsNullOrEmpty(Country);
+                               String.IsNullOrEmpty(Country) &&
+                               String.IsNullOrEmpty(TelNum);
     }
 }
