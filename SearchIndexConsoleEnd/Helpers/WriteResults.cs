@@ -13,6 +13,8 @@ namespace SearchIndexConsoleEnd.Helpers
         // Write search results to console //////////////////////////////////////////////////////////
         public static void WriteDocuments(SearchResults<Hotel> searchResults)
         {
+            Console.WriteLine($" Total Hotels: {searchResults.TotalCount}");
+            Console.WriteLine("*****************");
             foreach (SearchResult<Hotel> result in searchResults.GetResults())
             {
                 Console.WriteLine(result.Document);

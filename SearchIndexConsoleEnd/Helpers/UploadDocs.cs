@@ -26,7 +26,7 @@ namespace SearchIndexConsoleEnd.Helpers
                         Tags = new[] { "pool", "air conditioning", "concierge" },
                         ParkingIncluded = false,
                         LastRenovationDate = new DateTimeOffset(1970, 1, 18, 0, 0, 0, TimeSpan.Zero),
-                        Rating = 3.6,
+                        Rating = 3.7,
                         Address = new Address()
                         {
                             StreetAddress = "677 5th Ave",
@@ -78,7 +78,7 @@ namespace SearchIndexConsoleEnd.Helpers
                             StateProvince = "GA",
                             PostalCode = "30326",
                             Country = "USA",
-                            TelNum = "08 789 456",
+                            TelNum = "018 789 456",
                         }
                     }),
                 IndexDocumentsAction.Upload(

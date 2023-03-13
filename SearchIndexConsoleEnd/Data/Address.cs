@@ -38,7 +38,7 @@ namespace SearchIndexConsoleEnd.Data
 
             if (!IsEmpty)
             {
-                builder.AppendFormat("{0}\n{1}, {2} {3}\n{4} \nTel: {5}", StreetAddress, City, StateProvince, PostalCode, Country, TelNum);
+                builder.AppendFormat("{0}\n{1} {2} {3}\n{4} \nTel: {5}", StreetAddress, City, StateProvince, PostalCode, Country, TelNum);
             }
 
             return builder.ToString();
