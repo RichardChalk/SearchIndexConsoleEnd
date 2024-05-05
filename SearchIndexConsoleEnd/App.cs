@@ -19,7 +19,7 @@ namespace SearchIndexConsoleEnd
         {
             // Info from my Azure Portal
             string serviceName = "azure-search-demo";
-            string apiKey = "BnKvEo0tIarB0UGWTuD14M0gwm0FJgGERVH6kzANHxAzSeB59L99";
+            string apiKey = "Update key!";
             string indexName = "hotels-search";
 
             // ///////////////////////////////////////////////////////////////////////////////////
